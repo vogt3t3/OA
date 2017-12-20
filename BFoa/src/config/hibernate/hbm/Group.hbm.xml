@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false">
+  <class table="tb_group" name="com.bf.po.group.Group">
+    <id name="g_id">
+      <generator class="native"/>
+    </id>
+    <property name="g_name"/>
+    <property name="flag"/>
+    <property name="g_sn"/>
+    <set name="users" lazy="true">
+     <key column="g_id"></key>
+     <one-to-many class="com.bf.po.user.User"/>
+    </set>
+  </class>
+</hibernate-mapping>

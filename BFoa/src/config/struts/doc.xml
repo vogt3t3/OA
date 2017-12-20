@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<package name="bfdoc" namespace="/" extends="struts-default">
+        <action name="doc_*" class="docAction" method="{1}">
+            <result name="addDoc">/web/page/doc/addDoc01.jsp
+            </result>
+            <result name="addDoc02">/web/page/doc/addDoc02.jsp
+            </result>
+             <result name="addDoc03">/web/page/common/close.html
+            </result>
+             <result name="myDoc">/web/page/doc/myDoc.jsp
+            </result>
+            <result name="openSubmitDoc">/web/page/doc/openSubmitDoc.jsp
+            </result>
+             <result name="submitDoc">/web/page/common/close.html
+            </result>
+            <result name="openApproveingDoc">/web/page/doc/approveingDoc.jsp
+            </result>
+            <result name="openApprove">/web/page/doc/openApporve.jsp
+            </result>
+            
+            <result name="approve">/web/page/common/close.html
+            </result>
+            
+            <result name="openApprovedDoc">/web/page/doc/approvedDoc.jsp
+            </result>
+            
+            <result name="openApprovedHistory">/web/page/doc/approveHistory.jsp
+            </result>
+            
+           
+            
+        </action>
+</package>
+</struts>

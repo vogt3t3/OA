@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<package name="bfgrp" namespace="/" extends="struts-default">
+        <action name="grp_*" class="grpAction" method="{1}">
+            <result name="index">/web/page/grp/account.jsp
+            </result>
+            <result name="showAddGrp">/web/page/grp/addgroup.jsp
+            </result>
+            <result name="addGrp">/web/page/common/close.html
+            </result>
+            <result name="deleteGrp">/web/page/common/close.html
+            </result>
+             <result name="openUpdateGroup">/web/page/grp/editgroup.jsp
+            </result>
+            <result name="updateGroup">/web/page/common/close.html
+            </result>
+        </action>
+</package>
+</struts>
